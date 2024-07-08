@@ -1,7 +1,7 @@
 name: Schdule Workflow
 on: 
   schedule: ## Schedule the job to run at 12.am daily.
-    - cron: '34 16 * * *'
+    - cron: '13 11 * * *'
 jobs:
     run-shell-commands:
       runs-on: ubuntu-latest
