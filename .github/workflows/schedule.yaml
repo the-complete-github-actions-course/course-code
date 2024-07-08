@@ -1,0 +1,15 @@
+name: Schdule Workflow
+on: 
+  push:
+  schedule: ## Schedule the job to run at 12.am daily.
+    - cron: '32 10 * * *'
+jobs:
+    run-shell-commands:
+      runs-on: ubuntu-latest
+      steps:
+        - name: echo a string
+          run: echo "Hello GitHub Actions, this is my first workflow"
+        - name: Multiline Command
+          run: |
+            node -v
+            npm -v
